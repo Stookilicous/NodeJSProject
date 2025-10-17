@@ -1,0 +1,22 @@
+</main>
+<div id="foot-style">
+<footer class="site-footer">
+  <div class="container" >
+    <div><strong><%= site.brandName %></strong> — <%= site.tagline %></div>
+    <div><%= site.address %> • <%= site.phone %> • <%= site.email %></div>
+    <div>© <%= new Date().getFullYear() %> • Built by <%= site.ownerInitials %></div>
+  </div>
+</footer>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.querySelector('.toggle-button');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  });
+</script>
+</body>
+</html>

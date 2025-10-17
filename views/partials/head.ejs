@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%= title %> • <%= site.brandName %>
+  </title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    :root {
+      --student-hue: <%=site.themeHue %>;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  
+ <div class="topnav-wrapper">
+  <ul class="topnav nav-links">
+    <li><a class="fancy-font <% if (title=='Home' ) { %> current <% } %>" id="nav-home" href="/">B</a></li>
+    <li><a <% if (title=='About' ) { %> class="current" <% } %> href="/about">About Us</a></li>
+    <li><a <% if (title=='Contact' ) { %> class="current" <% } %> href="/contact">Contact Us</a></li>
+    <li><a <% if (title=='Locations' ) { %> class="current" <% } %> href="/locations">Locations</a></li>
+    <li><a <% if (title=='Menu' ) { %> class="current" <% } %> href="/menu">Menu</a></li>
+  </ul>
+
+  <!-- Hamburger toggle button -->
+  <button class="toggle-button" aria-label="Menu">☰</button>
+</div>
+
+
+</div>
+  
